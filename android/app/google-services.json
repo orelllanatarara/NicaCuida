@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680184079456",
+    "project_id": "tangarabyte-dd9f0",
+    "storage_bucket": "tangarabyte-dd9f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680184079456:android:1a2a07a0cedc2b88238f05",
+        "android_client_info": {
+          "package_name": "com.mycompany.tangarabyte"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW4l4Mp_ygN7gLz66OzpSK_U0it9di3uE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
