@@ -62,9 +62,39 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const Page4Widget(),
         ),
         FFRoute(
-          name: 'page5',
-          path: '/page5',
-          builder: (context, params) => const Page5Widget(),
+          name: 'page6',
+          path: '/page6',
+          builder: (context, params) => const Page6Widget(),
+        ),
+        FFRoute(
+          name: 'Perfil',
+          path: '/perfil',
+          builder: (context, params) => const PerfilWidget(),
+        ),
+        FFRoute(
+          name: 'page8',
+          path: '/page8',
+          builder: (context, params) => const Page8Widget(),
+        ),
+        FFRoute(
+          name: 'Settings2EditProfile',
+          path: '/settings2EditProfile',
+          builder: (context, params) => const Settings2EditProfileWidget(),
+        ),
+        FFRoute(
+          name: 'Home17Calendar',
+          path: '/home17Calendar',
+          builder: (context, params) => const Home17CalendarWidget(),
+        ),
+        FFRoute(
+          name: 'Details26SurfLesson',
+          path: '/details26SurfLesson',
+          builder: (context, params) => const Details26SurfLessonWidget(),
+        ),
+        FFRoute(
+          name: 'List02Products',
+          path: '/list02Products',
+          builder: (context, params) => const List02ProductsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

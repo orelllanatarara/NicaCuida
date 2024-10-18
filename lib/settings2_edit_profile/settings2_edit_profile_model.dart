@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'page5_widget.dart' show Page5Widget;
+import 'settings2_edit_profile_widget.dart' show Settings2EditProfileWidget;
 import 'package:flutter/material.dart';
 
-class Page5Model extends FlutterFlowModel<Page5Widget> {
+class Settings2EditProfileModel
+    extends FlutterFlowModel<Settings2EditProfileWidget> {
   @override
   void initState(BuildContext context) {}
 

@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'page4_widget.dart' show Page4Widget;
+import 'page6_widget.dart' show Page6Widget;
 import 'package:flutter/material.dart';
 
-class Page4Model extends FlutterFlowModel<Page4Widget> {
+class Page6Model extends FlutterFlowModel<Page6Widget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for TextField widget.
@@ -25,10 +25,6 @@ class Page4Model extends FlutterFlowModel<Page4Widget> {
   FocusNode? textFieldFocusNode5;
   TextEditingController? textController5;
   String? Function(BuildContext, String?)? textController5Validator;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode6;
-  TextEditingController? textController6;
-  String? Function(BuildContext, String?)? textController6Validator;
 
   @override
   void initState(BuildContext context) {}
@@ -49,8 +45,5 @@ class Page4Model extends FlutterFlowModel<Page4Widget> {
 
     textFieldFocusNode5?.dispose();
     textController5?.dispose();
-
-    textFieldFocusNode6?.dispose();
-    textController6?.dispose();
   }
 }

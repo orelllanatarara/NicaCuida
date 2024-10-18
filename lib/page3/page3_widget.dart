@@ -175,9 +175,13 @@ class _Page3WidgetState extends State<Page3Widget> {
                   ],
                 ),
               ),
-              const Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [],
+              const Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [],
+                ),
               ),
             ],
           ),
