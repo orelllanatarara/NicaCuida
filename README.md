@@ -1,1 +1,2 @@
 # NicaCuida
+NicaCuida es un app medica en la cual se busca crear un portal paciente, como usuario de NicaCuida podras acceder a diversas opciones, lo pincipal qu epodras hacer es agnedar una sita medica de manera online, esto sin la necesidad de moverte de tu hogar, también podras acceder a tu historial medico por medio de esta app, observa todo las citas y ru recorrido medico a lo largo de los años, tendras la opción de tenre un calendario para poder agendar de mejor manera tu cita, tendras reocordatorios a lo largo del día para poder recordar tus citas agendadas
