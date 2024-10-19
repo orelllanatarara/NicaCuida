@@ -2,27 +2,25 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'settings2_edit_profile_model.dart';
-export 'settings2_edit_profile_model.dart';
+import 'medico_model.dart';
+export 'medico_model.dart';
 
-class Settings2EditProfileWidget extends StatefulWidget {
-  const Settings2EditProfileWidget({super.key});
+class MedicoWidget extends StatefulWidget {
+  const MedicoWidget({super.key});
 
   @override
-  State<Settings2EditProfileWidget> createState() =>
-      _Settings2EditProfileWidgetState();
+  State<MedicoWidget> createState() => _MedicoWidgetState();
 }
 
-class _Settings2EditProfileWidgetState
-    extends State<Settings2EditProfileWidget> {
-  late Settings2EditProfileModel _model;
+class _MedicoWidgetState extends State<MedicoWidget> {
+  late MedicoModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Settings2EditProfileModel());
+    _model = createModel(context, () => MedicoModel());
   }
 
   @override
@@ -55,7 +53,7 @@ class _Settings2EditProfileWidgetState
           },
         ),
         title: Text(
-          'Complete Profile',
+          'Perfil',
           style: FlutterFlowTheme.of(context).titleSmall.override(
             fontFamily: 'Plus Jakarta Sans',
             letterSpacing: 0.0,

@@ -46,26 +46,62 @@ class _PerfilWidgetState extends State<PerfilWidget> {
               Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                    child: Icon(
-                      Icons.arrow_back_ios_new,
-                      color: FlutterFlowTheme.of(context).primaryText,
-                      size: 25.0,
+                  Container(
+                    width: 400.0,
+                    height: 50.0,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).secondaryBackground,
                     ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(130.0, 0.0, 0.0, 0.0),
-                    child: Text(
-                      'Perfil',
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Plus Jakarta Sans',
-                            fontSize: 18.0,
-                            letterSpacing: 0.0,
-                            fontWeight: FontWeight.bold,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              20.0, 0.0, 0.0, 0.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Inicio');
+                            },
+                            child: Icon(
+                              Icons.arrow_back_ios_new,
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              size: 25.0,
+                            ),
                           ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              130.0, 0.0, 0.0, 0.0),
+                          child: Text(
+                            'Perfil',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Plus Jakarta Sans',
+                                  fontSize: 18.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              90.0, 0.0, 0.0, 0.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8.0),
+                            child: Image.asset(
+                              'assets/images/Diseo_sin_ttulo.png',
+                              width: 50.0,
+                              height: 50.0,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -311,10 +347,6 @@ class _PerfilWidgetState extends State<PerfilWidget> {
                     ),
                   ),
                 ],
-              ),
-              const Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [],
               ),
             ],
           ),

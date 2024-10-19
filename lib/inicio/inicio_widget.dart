@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +71,7 @@ class _InicioWidgetState extends State<InicioWidget> {
                       child: Image.asset(
                         'assets/images/calendario_(6).png',
                         width: 310.0,
-                        height: 202.0,
+                        height: 100.0,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -103,13 +104,22 @@ class _InicioWidgetState extends State<InicioWidget> {
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/calendario.png',
-                        width: 110.0,
-                        height: 120.0,
-                        fit: BoxFit.cover,
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Calendario');
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/calendario.png',
+                          width: 110.0,
+                          height: 120.0,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -130,13 +140,22 @@ class _InicioWidgetState extends State<InicioWidget> {
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/calendario_(2).png',
-                        width: 110.0,
-                        height: 120.0,
-                        fit: BoxFit.cover,
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('datosdehistorialclinico');
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          'assets/images/calendario_(2).png',
+                          width: 110.0,
+                          height: 120.0,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -150,39 +169,66 @@ class _InicioWidgetState extends State<InicioWidget> {
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 20.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/calendario_(3).png',
-                          width: 110.0,
-                          height: 120.0,
-                          fit: BoxFit.cover,
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('Hospitales');
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/calendario_(3).png',
+                            width: 110.0,
+                            height: 120.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 20.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/calendario_(4).png',
-                          width: 110.0,
-                          height: 120.0,
-                          fit: BoxFit.cover,
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('listadoc');
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/calendario_(4).png',
+                            width: 110.0,
+                            height: 120.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 20.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/calendario_(5).png',
-                          width: 110.0,
-                          height: 120.0,
-                          fit: BoxFit.cover,
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('noticias');
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                            'assets/images/calendario_(5).png',
+                            width: 110.0,
+                            height: 120.0,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
@@ -207,18 +253,28 @@ class _InicioWidgetState extends State<InicioWidget> {
                   ),
                 ],
               ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
+              Wrap(
+                spacing: 0.0,
+                runSpacing: 0.0,
+                alignment: WrapAlignment.start,
+                crossAxisAlignment: WrapCrossAlignment.start,
+                direction: Axis.horizontal,
+                runAlignment: WrapAlignment.start,
+                verticalDirection: VerticalDirection.down,
+                clipBehavior: Clip.none,
                 children: [
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.network(
-                        'https://picsum.photos/seed/672/600',
-                        width: 83.0,
-                        height: 62.0,
+                    child: Container(
+                      width: 83.0,
+                      height: 83.0,
+                      clipBehavior: Clip.antiAlias,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                      ),
+                      child: Image.asset(
+                        'assets/images/Time_(3).png',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -239,18 +295,28 @@ class _InicioWidgetState extends State<InicioWidget> {
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
+                child: Wrap(
+                  spacing: 0.0,
+                  runSpacing: 0.0,
+                  alignment: WrapAlignment.start,
+                  crossAxisAlignment: WrapCrossAlignment.start,
+                  direction: Axis.horizontal,
+                  runAlignment: WrapAlignment.start,
+                  verticalDirection: VerticalDirection.down,
+                  clipBehavior: Clip.none,
                   children: [
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.network(
-                          'https://picsum.photos/seed/672/600',
-                          width: 83.0,
-                          height: 62.0,
+                      child: Container(
+                        width: 83.0,
+                        height: 83.0,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                        ),
+                        child: Image.asset(
+                          'assets/images/Time_(4).png',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -270,16 +336,71 @@ class _InicioWidgetState extends State<InicioWidget> {
                   ],
                 ),
               ),
-              Column(
+              Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Divider(
-                    thickness: 2.0,
-                    color: FlutterFlowTheme.of(context).alternate,
-                  ),
-                  const Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [],
+                  Container(
+                    width: 400.0,
+                    height: 80.0,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFB9DEF4),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              20.0, 0.0, 0.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderRadius: 8.0,
+                            buttonSize: 50.0,
+                            fillColor: const Color(0xFF00029F),
+                            icon: Icon(
+                              Icons.home_rounded,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 25.0,
+                            ),
+                            onPressed: () {
+                              print('IconButton pressed ...');
+                            },
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              100.0, 0.0, 0.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderRadius: 8.0,
+                            buttonSize: 50.0,
+                            fillColor: const Color(0xFF00029F),
+                            icon: Icon(
+                              Icons.star,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 24.0,
+                            ),
+                            onPressed: () {
+                              print('IconButton pressed ...');
+                            },
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              100.0, 0.0, 20.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderRadius: 8.0,
+                            buttonSize: 50.0,
+                            fillColor: const Color(0xFF00029F),
+                            icon: Icon(
+                              Icons.person_rounded,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 24.0,
+                            ),
+                            onPressed: () async {
+                              context.pushNamed('Perfil');
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

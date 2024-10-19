@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'page4_widget.dart' show Page4Widget;
+import 'datosdehistorialclinico_widget.dart' show DatosdehistorialclinicoWidget;
 import 'package:flutter/material.dart';
 
-class Page4Model extends FlutterFlowModel<Page4Widget> {
+class DatosdehistorialclinicoModel
+    extends FlutterFlowModel<DatosdehistorialclinicoWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for TextField widget.

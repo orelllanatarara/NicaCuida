@@ -5,20 +5,19 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'details26_surf_lesson_model.dart';
-export 'details26_surf_lesson_model.dart';
+import 'noticias_model.dart';
+export 'noticias_model.dart';
 
-class Details26SurfLessonWidget extends StatefulWidget {
-  const Details26SurfLessonWidget({super.key});
+class NoticiasWidget extends StatefulWidget {
+  const NoticiasWidget({super.key});
 
   @override
-  State<Details26SurfLessonWidget> createState() =>
-      _Details26SurfLessonWidgetState();
+  State<NoticiasWidget> createState() => _NoticiasWidgetState();
 }
 
-class _Details26SurfLessonWidgetState extends State<Details26SurfLessonWidget>
+class _NoticiasWidgetState extends State<NoticiasWidget>
     with TickerProviderStateMixin {
-  late Details26SurfLessonModel _model;
+  late NoticiasModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -27,7 +26,7 @@ class _Details26SurfLessonWidgetState extends State<Details26SurfLessonWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Details26SurfLessonModel());
+    _model = createModel(context, () => NoticiasModel());
 
     animationsMap.addAll({
       'blurOnPageLoadAnimation': AnimationInfo(
@@ -71,26 +70,6 @@ class _Details26SurfLessonWidgetState extends State<Details26SurfLessonWidget>
           MoveEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 400.0.ms,
-            begin: const Offset(0.0, 40.0),
-            end: const Offset(0.0, 0.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation3': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          VisibilityEffect(duration: 150.ms),
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 150.0.ms,
-            duration: 400.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 150.0.ms,
             duration: 400.0.ms,
             begin: const Offset(0.0, 40.0),
             end: const Offset(0.0, 0.0),
@@ -440,43 +419,85 @@ class _Details26SurfLessonWidgetState extends State<Details26SurfLessonWidget>
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation2']!),
                     ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: 400.0,
+                            height: 80.0,
+                            decoration: const BoxDecoration(
+                              color: Color(0xFFB9DEF4),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      20.0, 0.0, 0.0, 0.0),
+                                  child: FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 8.0,
+                                    buttonSize: 50.0,
+                                    fillColor: const Color(0xFF00029F),
+                                    icon: Icon(
+                                      Icons.home_rounded,
+                                      color: FlutterFlowTheme.of(context).info,
+                                      size: 25.0,
+                                    ),
+                                    onPressed: () async {
+                                      context.pushNamed('Inicio');
+                                    },
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      100.0, 0.0, 0.0, 0.0),
+                                  child: FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 8.0,
+                                    buttonSize: 50.0,
+                                    fillColor: const Color(0xFF00029F),
+                                    icon: Icon(
+                                      Icons.star,
+                                      color: FlutterFlowTheme.of(context).info,
+                                      size: 24.0,
+                                    ),
+                                    onPressed: () {
+                                      print('IconButton pressed ...');
+                                    },
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      100.0, 0.0, 20.0, 0.0),
+                                  child: FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 8.0,
+                                    buttonSize: 50.0,
+                                    fillColor: const Color(0xFF00029F),
+                                    icon: Icon(
+                                      Icons.person_rounded,
+                                      color: FlutterFlowTheme.of(context).info,
+                                      size: 24.0,
+                                    ),
+                                    onPressed: () async {
+                                      context.pushNamed('Perfil');
+                                    },
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
-            Container(
-              width: double.infinity,
-              height: 66.0,
-              decoration: BoxDecoration(
-                color: FlutterFlowTheme.of(context).primary,
-                boxShadow: const [
-                  BoxShadow(
-                    blurRadius: 4.0,
-                    color: Color(0x28000000),
-                    offset: Offset(
-                      0.0,
-                      -2.0,
-                    ),
-                  )
-                ],
-                borderRadius: const BorderRadius.only(
-                  bottomLeft: Radius.circular(0.0),
-                  bottomRight: Radius.circular(0.0),
-                  topLeft: Radius.circular(16.0),
-                  topRight: Radius.circular(16.0),
-                ),
-              ),
-              alignment: const AlignmentDirectional(0.0, -0.45),
-              child: Text(
-                'Book Now',
-                style: FlutterFlowTheme.of(context).headlineSmall.override(
-                      fontFamily: 'Outfit',
-                      color: Colors.white,
-                      letterSpacing: 0.0,
-                    ),
-              ),
-            ).animateOnPageLoad(
-                animationsMap['containerOnPageLoadAnimation3']!),
           ],
         ),
       ),

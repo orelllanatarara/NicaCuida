@@ -1,6 +1,8 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'page2_model.dart';
 export 'page2_model.dart';
 
@@ -103,9 +105,74 @@ class _Page2WidgetState extends State<Page2Widget> {
                   ),
                 ],
               ),
-              const Row(
+              Row(
                 mainAxisSize: MainAxisSize.max,
-                children: [],
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 0.0, 0.0),
+                    child: FlutterFlowIconButton(
+                      borderRadius: 8.0,
+                      buttonSize: 40.0,
+                      fillColor: const Color(0xFFC6DBE7),
+                      icon: FaIcon(
+                        FontAwesomeIcons.facebookF,
+                        color: FlutterFlowTheme.of(context).info,
+                        size: 24.0,
+                      ),
+                      onPressed: () async {
+                        await launchURL(
+                            'https://www.facebook.com/profile.php?id=100094142887923');
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                    child: Text(
+                      'Facebook: NicaCuida',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Plus Jakarta Sans',
+                            letterSpacing: 0.0,
+                          ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 0.0, 0.0),
+                    child: FlutterFlowIconButton(
+                      borderColor: Colors.transparent,
+                      borderRadius: 8.0,
+                      buttonSize: 40.0,
+                      fillColor: const Color(0xFFC6DBE7),
+                      icon: FaIcon(
+                        FontAwesomeIcons.instagram,
+                        color: FlutterFlowTheme.of(context).info,
+                        size: 24.0,
+                      ),
+                      onPressed: () async {
+                        await launchURL(
+                            'https://www.instagram.com/nicacuida_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==');
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                    child: Text(
+                      'Intagram: @nicacuida_',
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Plus Jakarta Sans',
+                            letterSpacing: 0.0,
+                          ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

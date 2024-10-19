@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_calendar.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'page3_widget.dart' show Page3Widget;
+import 'calendario_widget.dart' show CalendarioWidget;
 import 'package:flutter/material.dart';
 
-class Page3Model extends FlutterFlowModel<Page3Widget> {
+class CalendarioModel extends FlutterFlowModel<CalendarioWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for Calendar widget.

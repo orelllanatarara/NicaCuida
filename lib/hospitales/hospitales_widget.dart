@@ -1,25 +1,26 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'page8_model.dart';
-export 'page8_model.dart';
+import 'hospitales_model.dart';
+export 'hospitales_model.dart';
 
-class Page8Widget extends StatefulWidget {
-  const Page8Widget({super.key});
+class HospitalesWidget extends StatefulWidget {
+  const HospitalesWidget({super.key});
 
   @override
-  State<Page8Widget> createState() => _Page8WidgetState();
+  State<HospitalesWidget> createState() => _HospitalesWidgetState();
 }
 
-class _Page8WidgetState extends State<Page8Widget> {
-  late Page8Model _model;
+class _HospitalesWidgetState extends State<HospitalesWidget> {
+  late HospitalesModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Page8Model());
+    _model = createModel(context, () => HospitalesModel());
   }
 
   @override
@@ -239,6 +240,77 @@ class _Page8WidgetState extends State<Page8Widget> {
                     ),
                   ],
                 ),
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    width: 400.0,
+                    height: 80.0,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFB9DEF4),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              20.0, 0.0, 0.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderColor: Colors.transparent,
+                            borderRadius: 8.0,
+                            buttonSize: 50.0,
+                            fillColor: const Color(0xFF00029F),
+                            icon: Icon(
+                              Icons.home_rounded,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 25.0,
+                            ),
+                            onPressed: () async {
+                              context.pushNamed('Inicio');
+                            },
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              100.0, 0.0, 0.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderColor: Colors.transparent,
+                            borderRadius: 8.0,
+                            buttonSize: 50.0,
+                            fillColor: const Color(0xFF00029F),
+                            icon: Icon(
+                              Icons.star,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 24.0,
+                            ),
+                            onPressed: () {
+                              print('IconButton pressed ...');
+                            },
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              100.0, 0.0, 20.0, 0.0),
+                          child: FlutterFlowIconButton(
+                            borderColor: Colors.transparent,
+                            borderRadius: 8.0,
+                            buttonSize: 50.0,
+                            fillColor: const Color(0xFF00029F),
+                            icon: Icon(
+                              Icons.person_rounded,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 24.0,
+                            ),
+                            onPressed: () async {
+                              context.pushNamed('Perfil');
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

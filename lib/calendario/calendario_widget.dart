@@ -1,26 +1,27 @@
 import '/flutter_flow/flutter_flow_calendar.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'page3_model.dart';
-export 'page3_model.dart';
+import 'calendario_model.dart';
+export 'calendario_model.dart';
 
-class Page3Widget extends StatefulWidget {
-  const Page3Widget({super.key});
+class CalendarioWidget extends StatefulWidget {
+  const CalendarioWidget({super.key});
 
   @override
-  State<Page3Widget> createState() => _Page3WidgetState();
+  State<CalendarioWidget> createState() => _CalendarioWidgetState();
 }
 
-class _Page3WidgetState extends State<Page3Widget> {
-  late Page3Model _model;
+class _CalendarioWidgetState extends State<CalendarioWidget> {
+  late CalendarioModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Page3Model());
+    _model = createModel(context, () => CalendarioModel());
   }
 
   @override
@@ -182,6 +183,81 @@ class _Page3WidgetState extends State<Page3Widget> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [],
                 ),
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Container(
+                    width: 400.0,
+                    height: 80.0,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFB9DEF4),
+                    ),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                20.0, 0.0, 0.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: Colors.transparent,
+                              borderRadius: 8.0,
+                              buttonSize: 50.0,
+                              fillColor: const Color(0xFF00029F),
+                              icon: Icon(
+                                Icons.home_rounded,
+                                color: FlutterFlowTheme.of(context).info,
+                                size: 25.0,
+                              ),
+                              onPressed: () async {
+                                context.pushNamed('Inicio');
+                              },
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                100.0, 0.0, 0.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: Colors.transparent,
+                              borderRadius: 8.0,
+                              buttonSize: 50.0,
+                              fillColor: const Color(0xFF00029F),
+                              icon: Icon(
+                                Icons.star,
+                                color: FlutterFlowTheme.of(context).info,
+                                size: 24.0,
+                              ),
+                              onPressed: () {
+                                print('IconButton pressed ...');
+                              },
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                100.0, 0.0, 20.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: Colors.transparent,
+                              borderRadius: 8.0,
+                              buttonSize: 50.0,
+                              fillColor: const Color(0xFF00029F),
+                              icon: Icon(
+                                Icons.person_rounded,
+                                color: FlutterFlowTheme.of(context).info,
+                                size: 24.0,
+                              ),
+                              onPressed: () async {
+                                context.pushNamed('Perfil');
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

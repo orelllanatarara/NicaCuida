@@ -1,26 +1,28 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'page4_model.dart';
-export 'page4_model.dart';
+import 'datosdehistorialclinico_model.dart';
+export 'datosdehistorialclinico_model.dart';
 
-class Page4Widget extends StatefulWidget {
-  const Page4Widget({super.key});
+class DatosdehistorialclinicoWidget extends StatefulWidget {
+  const DatosdehistorialclinicoWidget({super.key});
 
   @override
-  State<Page4Widget> createState() => _Page4WidgetState();
+  State<DatosdehistorialclinicoWidget> createState() =>
+      _DatosdehistorialclinicoWidgetState();
 }
 
-class _Page4WidgetState extends State<Page4Widget> {
-  late Page4Model _model;
+class _DatosdehistorialclinicoWidgetState
+    extends State<DatosdehistorialclinicoWidget> {
+  late DatosdehistorialclinicoModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Page4Model());
+    _model = createModel(context, () => DatosdehistorialclinicoModel());
 
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
@@ -673,40 +675,79 @@ class _Page4WidgetState extends State<Page4Widget> {
                   ),
                 ],
               ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(150.0, 0.0, 0.0, 0.0),
-                    child: FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: '',
-                      icon: const Icon(
-                        Icons.arrow_forward_ios,
-                        size: 15.0,
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Container(
+                      width: 400.0,
+                      height: 80.0,
+                      decoration: const BoxDecoration(
+                        color: Color(0xFFB9DEF4),
                       ),
-                      options: FFButtonOptions(
-                        height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 15.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primary,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Plus Jakarta Sans',
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 0.0,
-                        borderRadius: BorderRadius.circular(8.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                20.0, 0.0, 0.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: Colors.transparent,
+                              borderRadius: 8.0,
+                              buttonSize: 50.0,
+                              fillColor: const Color(0xFF00029F),
+                              icon: Icon(
+                                Icons.home_rounded,
+                                color: FlutterFlowTheme.of(context).info,
+                                size: 25.0,
+                              ),
+                              onPressed: () async {
+                                context.pushNamed('Inicio');
+                              },
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                100.0, 0.0, 0.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: Colors.transparent,
+                              borderRadius: 8.0,
+                              buttonSize: 50.0,
+                              fillColor: const Color(0xFF00029F),
+                              icon: Icon(
+                                Icons.star,
+                                color: FlutterFlowTheme.of(context).info,
+                                size: 24.0,
+                              ),
+                              onPressed: () {
+                                print('IconButton pressed ...');
+                              },
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                100.0, 0.0, 20.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              borderColor: Colors.transparent,
+                              borderRadius: 8.0,
+                              buttonSize: 50.0,
+                              fillColor: const Color(0xFF00029F),
+                              icon: Icon(
+                                Icons.person_rounded,
+                                color: FlutterFlowTheme.of(context).info,
+                                size: 24.0,
+                              ),
+                              onPressed: () async {
+                                context.pushNamed('Perfil');
+                              },
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
