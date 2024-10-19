@@ -6,7 +6,14 @@ NicaCuida es un app medica en la cual se busca crear un portal paciente, como us
 -Fire Base
 -Canva
 -Figma
+
+
 -Remove
-Primeramente se debe de aclarar que la aplicacion fue diseñada para que sea accesible en su mayoria a todos los dispositivos Android, ya que es una aplicacion que requiere pocos recursos.
+<h3>Requisitos para la instalación</h3>
+Primeramente se debe de aclarar que la aplicacion fue diseñada para que sea accesible en su mayoria a todos los dispositivos Android, ya que es una aplicacion que requiere pocos recursos. Por lo tanto la palicación movil de CuidaNia necesita:
+-Un almacenamiento de 100mb libres aproximadamente para poder correr fluidamente.
+-Una versión de android 8 o superior a esta.
+-Una ram de 4gb o superior a esta.
+
 
 
