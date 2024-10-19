@@ -14,7 +14,7 @@ NicaCuida es un app medica en la cual se busca crear un portal paciente, como us
 
 -Remove
 
-<h3>Requisistos</h3>
+<h3>Requisitos</h3>
 
 Primeramente se debe de aclarar que la aplicacion fue diseñada para que sea accesible en su mayoria a todos los dispositivos Android, ya que es una aplicacion que requiere pocos recursos.
 Por lo tanto para hacer uso de la aplicación móvil NicaCuida, se requiere:
