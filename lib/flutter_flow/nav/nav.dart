@@ -111,11 +111,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const Page6Widget(),
         ),
         FFRoute(
-          name: 'Perfil',
-          path: '/perfil',
-          builder: (context, params) => const PerfilWidget(),
-        ),
-        FFRoute(
           name: 'Hospitales',
           path: '/hospitales',
           builder: (context, params) => const HospitalesWidget(),
@@ -126,19 +121,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const MedicoWidget(),
         ),
         FFRoute(
-          name: 'Home17Calendar',
-          path: '/home17Calendar',
-          builder: (context, params) => const Home17CalendarWidget(),
-        ),
-        FFRoute(
           name: 'noticias',
           path: '/noticias',
           builder: (context, params) => const NoticiasWidget(),
-        ),
-        FFRoute(
-          name: 'Home19PropertyAppbookingapp',
-          path: '/home19PropertyAppbookingapp',
-          builder: (context, params) => const Home19PropertyAppbookingappWidget(),
         ),
         FFRoute(
           name: 'registro',
@@ -154,6 +139,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'listadoc',
           path: '/listadoc',
           builder: (context, params) => const ListadocWidget(),
+        ),
+        FFRoute(
+          name: 'Perfil',
+          path: '/perfil',
+          builder: (context, params) => const PerfilWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -272,6 +262,7 @@ class FFParameters {
     String paramName,
     ParamType type, {
     bool isList = false,
+    List<String>? collectionNamePath,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -289,6 +280,7 @@ class FFParameters {
       param,
       type,
       isList,
+      collectionNamePath: collectionNamePath,
     );
   }
 }
